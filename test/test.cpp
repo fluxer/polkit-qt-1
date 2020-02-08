@@ -7,8 +7,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <pwd.h>
+
+#include <QtCore/QDebug>
 #include <QtDBus/QDBusMessage>
 #include <QtDBus/QDBusConnection>
+
 using namespace PolkitQt1;
 using namespace PolkitQt1::Agent;
 

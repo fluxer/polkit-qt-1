@@ -1,4 +1,3 @@
-enable_testing()
 
 include_directories(
     ${CMAKE_SOURCE_DIR}/agent

@@ -185,14 +185,14 @@ endif (BUILD_EXAMPLES)
 
 add_subdirectory(cmake)
 
-option(BUILD_TEST "Builds unit tests for polkit-qt-1" OFF)
-if (BUILD_TEST)
-    add_subdirectory(test)
-endif (BUILD_TEST)
-
 add_subdirectory(core)
 add_subdirectory(gui)
 add_subdirectory(agent)
+
+if (ENABLE_TESTING)
+    enable_testing()
+    add_subdirectory(test)
+endif (ENABLE_TESTING)
 
 # Always last!
 include (PolkitQt-1Dist)
